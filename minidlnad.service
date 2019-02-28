@@ -1,0 +1,10 @@
+[Unit]
+Description=Minidlna Daemon
+After=syslog.target network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/sbin/minidlnad
+
+[Install]
+WantedBy=multi-user.target
